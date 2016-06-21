@@ -1,2 +1,6 @@
 mod 'puppetlabs/vcsrepo', '1.3.2'
 mod 'puppetlabs/stdlib',  '4.12.0'
+mod 'jfryman/nginx',      '0.3.0'
+mod 'puppetlabs/apt',     '2.2.2'
+mod 'puppetlabs/concat',  '2.1.0'
+mod 'stahnma/epel',       '1.2.2'
