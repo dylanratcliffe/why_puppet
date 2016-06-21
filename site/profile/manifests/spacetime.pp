@@ -21,4 +21,13 @@ class profile::spacetime {
   nginx::resource::vhost { 'spacetime':
     www_root => '/var/www/spacetime',
   }
+
+  # Dynamically configure the load balancer
+  @@haproxy::balancermember { $::fqdn:
+    listening_service => 'spacetime',
+    server_names      => $::fqdn,
+    ipaddresses       => $::networking['ip'],
+    ports             => '80',
+    options           => 'check',
+  }
 }
