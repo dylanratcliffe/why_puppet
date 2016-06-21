@@ -6,7 +6,6 @@ class profile::monitoring_agent {
   }
 
   include ::collectd::plugin::cpu
-  include ::collectd::plugin::disk
   include ::collectd::plugin::memory
   include ::collectd::plugin::interface
   include ::collectd::plugin::df
