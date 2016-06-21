@@ -16,7 +16,6 @@ class profile::spacetime {
   }
 
   nginx::resource::vhost { 'spacetime':
-    ssl      => true,
     www_root => '/var/www/spacetime',
   }
 }
