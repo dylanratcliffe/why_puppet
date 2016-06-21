@@ -6,7 +6,7 @@ class profile::nginx {
   }
 
   if $::os['family'] == 'RedHat' {
-    class { 'epel':
+    class { '::epel':
       stage => 'repositories',
     }
   }
