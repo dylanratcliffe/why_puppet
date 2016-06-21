@@ -1,7 +1,6 @@
 #
 class profile::nginx {
   stage { 'repositories':
-    ensure => present,
     before => Stage['main'],
   }
 
