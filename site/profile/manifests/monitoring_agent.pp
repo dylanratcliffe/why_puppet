@@ -5,6 +5,7 @@ class profile::monitoring_agent {
     interval     => '5',
   }
 
+  include collectd::plugin::syslog
   include ::collectd::plugin::cpu
   include ::collectd::plugin::memory
   include ::collectd::plugin::interface
